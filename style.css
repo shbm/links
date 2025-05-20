@@ -14,10 +14,9 @@ body {
 
 .profile-card {
     background-color: #11141b; /* Darker card background */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 1px;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     overflow: hidden;
     text-align: center;
 }
@@ -112,7 +111,6 @@ body {
     padding: 15px 20px;
     text-decoration: none;
     color: #e0e0e0;
-    transition: background-color 0.3s;
 }
 
 .tab-content li:last-child a {
@@ -120,7 +118,8 @@ body {
 }
 
 .tab-content li a:hover {
-    background-color: #3a3a4e;
+    background-color: #3a3a4e37;
+    border-radius: 10px;
 }
 
 .tab-content i {
