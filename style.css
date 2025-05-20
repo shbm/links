@@ -147,3 +147,26 @@ body {
     color: #8c8ca0;
     font-weight: 300; /* Added lighter font weight */
 }
+
+/* Snowfall Effect */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1.5em;
+    user-select: none;
+    z-index: -1;
+    pointer-events: none;
+    animation: snowfall linear infinite;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    opacity: 0.8;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0vh) rotate(360deg);
+    }
+}
