@@ -1,88 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoebumx</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://pbs.twimg.com/profile_images/1862857213691215872/S_UZqLec_400x400.jpg" type="image/x-icon" />
-    <!-- Font Awesome icons -->
-    
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-+N4vBmcNYWA1WEM6G+jiI7aAGoigRHrszhrzCpIgHaSqqf5Podj4GBqRhUDS0XMWPH1GUKUyO0K9EjzQSo/6AQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Core theme CSS -->
+    <title>My Profile</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="https://pbs.twimg.com/profile_images/1862857213691215872/S_UZqLec_400x400.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Shubham</h1>
+            <p>f*** around and find out</p>
 
-  <body>
-    <!-- Parallax Pixel Background Animation -->
-    <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </section>
-    <!-- End of Parallax Pixel Background Animation -->
-
-    <a id="profilePicture" href="#popup">
-      <img src="https://pbs.twimg.com/profile_images/1862857213691215872/S_UZqLec_400x400.jpg" alt="Profile Picture">
-    </a>
-
-    <div class="overlay" id="popup">
-      <div class="popup">
-        <div class="popup-photo">
-          <a href="https://pbs.twimg.com/profile_images/1862857213691215872/S_UZqLec_400x400.jpg" target="_blank">
-            <img src="https://pbs.twimg.com/profile_images/1862857213691215872/S_UZqLec_400x400.jpg" alt="Profile Picture">
-          </a>
         </div>
-        <div class="popup-quote">
-          fuck around and find out
+
+        <div id="Links" class="tab-content" style="display: block;">
+            <ul>
+                <li>
+                    <a href="https://instagram.com/shoebumx" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <div class="link-info">
+                            <span class="link-title">Instagram</span>
+                            <span class="link-url">instagram.com/shoebumx</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@shoebumx" target="_blank">
+                      <i class="fab fa-youtube"></i>
+                      <div class="link-info">
+                          <span class="link-title">YouTube</span>
+                          <span class="link-url">youtube.com/@shoebumx</span>
+                      </div>
+                  </a>
+              </li>
+                <li>
+                    <a href="https://twitter.com/shoebumx" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <div class="link-info">
+                            <span class="link-title">Twitter</span>
+                            <span class="link-url">twitter.com/shoebumx</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                  <a href="https://photos.shoebumx.com" target="_blank">
+                      <i class="fas fa-camera"></i>
+                      <div class="link-info">
+                          <span class="link-title">Photography</span>
+                          <span class="link-url">photos.shoebumx.com</span>
+                      </div>
+                  </a>
+                </li>
+                <li>
+                    <a href="https://github.com/shbm" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <div class="link-info">
+                            <span class="link-title">GitHub</span>
+                            <span class="link-url">github.com/shbm</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/shbm/" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                      <div class="link-info">
+                          <span class="link-title">LinkedIn</span>
+                          <span class="link-url">linkedin.com/in/shbm/</span>
+                      </div>
+                  </a>
+                </li>
+
+          </ul>
         </div>
-        <a class="popup-close" onclick="history.back()">&times;</a>
-      </div>
     </div>
 
-    <div id="userName">
-      @shoebumx
-    </div>
-
-    <div id="links">
-      <a class="link" href="https://www.youtube.com/@shoebumx" target="_blank">
-        <i class="fa-brands fa-youtube"></i> YouTube
-      </a>
-    
-      <a class="link" href="https://www.instagram.com/shoebumx" target="_blank">
-        <i class="fa-brands fa-instagram"></i> Instagram
-      </a>
-    
-      <a class="link" href="https://www.instagram.com/shot.by.shoebumx" target="_blank">
-        <i class="fa-solid fa-camera"></i> Photography
-      </a>
-    
-      <a class="link" href="https://twitter.com/shoebumx" target="_blank">
-        <i class="fa-brands fa-twitter"></i> Twitter
-      </a>
-    
-      <a class="link" href="https://www.linkedin.com/in/shbm" target="_blank">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
-    
-      <a class="link" href="https://github.com/shbm" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-    
-      <a class="link" href="https://www.dhamma.org/en/index" target="_blank">
-        <i class="fa-solid fa-dharmachakra"></i> Dhamma
-      </a>
-    </div>
-    
-    <div id="hashtag">
-      #BeHappy❤
-    </div>
-  </body>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="f94f307a-e0fe-443f-a077-44faa1deff47"></script>
+    <script src="script.js"></script>
+</body>
 </html>
