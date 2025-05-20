@@ -3,6 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Snowflake characters
     const snowflakes = ['❄', '❅', '❆', '•', '*'];
     
+    // Elegant winter color palette
+    const snowflakeColors = [
+        '#ffffff', // White
+        '#e0f7fa', // Very light blue
+        '#b3e5fc', // Light blue
+        '#d1c4e9', // Lavender
+        '#b2dfdb', // Mint
+        '#c8e6c9'  // Light green
+    ];
+    
     // Configuration
     const config = {
         maxFlakes: 100,         // Maximum number of snowflakes
@@ -41,13 +51,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const size = Math.floor(Math.random() * (config.maxSize - config.minSize + 1)) + config.minSize;
         const posX = Math.random() * window.innerWidth;
         const speed = Math.floor(Math.random() * (config.maxSpeed - config.minSpeed + 1)) + config.minSpeed;
-        const opacity = Math.random() * 0.6 + 0.2; // Between 0.2 and 0.8
+        const opacity = Math.random() * 0.3 + 0.2; // Between 0.2 and 0.5 for more opacity/subtlety
+        
+        // Set random color from our color array
+        const randomColor = snowflakeColors[Math.floor(Math.random() * snowflakeColors.length)];
         
         // Apply styles
         flake.style.fontSize = `${size}px`;
         flake.style.left = `${posX}px`;
         flake.style.animationDuration = `${speed}s`;
         flake.style.opacity = opacity;
+        flake.style.color = randomColor; // Apply the random color
+        flake.style.textShadow = `0 0 3px ${randomColor}`; // Subtle glow effect
         
         // Add to the DOM
         snowContainer.appendChild(flake);
